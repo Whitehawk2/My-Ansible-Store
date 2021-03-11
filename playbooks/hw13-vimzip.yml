@@ -1,0 +1,9 @@
+---
+- hosts: all 
+  become: yes
+  tasks:
+    - name: install packges
+      apt: name={{ item }} update_cache=yes state=latest
+      loop: ['vim', 'zip']
+      tags: ['Installation']
+      

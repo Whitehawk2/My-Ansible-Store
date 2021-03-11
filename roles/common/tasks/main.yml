@@ -1,0 +1,9 @@
+---
+- name: install packges
+  become: yes
+  apt: 
+    name: "{{ item }}"
+    state: latest
+  loop: 
+    - vim
+    - zip

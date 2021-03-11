@@ -1,0 +1,6 @@
+---
+- name: create new file 
+  # become: yes  TODO: is this needed? /tmp is not privileged
+  copy:
+    content: 'Hello world!'
+    dest: /tmp/test1

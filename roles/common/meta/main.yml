@@ -1,0 +1,11 @@
+galaxy_info:
+  author: Whitehawk2 
+  description: tiny role to install vim and zip on ubuntu hosts
+
+  license: BSD-3-Clause (default)
+
+  min_ansible_version: 2.9
+  platforms:
+   - name: Ubuntu/Debian-based
+     versions:
+       - all
